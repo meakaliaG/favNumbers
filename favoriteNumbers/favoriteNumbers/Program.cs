@@ -6,7 +6,8 @@
 {
     internal class Program
     {
-        //static addition function here
+        //static addition function w auto comment here
+        
         static void add(int a, int b) { }
 
 
