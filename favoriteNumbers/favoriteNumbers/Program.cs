@@ -6,49 +6,39 @@
 {
     internal class Program
     {
-        //static addition function w auto comment here
-        
-        static void add(int a, int b) { }
+        //  - -  subtract function   - -  
+        static int Subtract(int a, int b)
+        {
+            return a - b;
+        }
 
+        //  - -  Add function   - -  
+        static int Add(int a, int b)
+        {
+            return a + b;
+        }
 
+        //  - - Main   - -  
         static void Main(string[] args)
         {
-            //declare variables
-            int noahFavoiteNumber;
-            int meaFavoriteNumber;
 
-            //initialize variables
-            //REPLACE 0 WITH UR FAV NUM
-            noahFavoiteNumber = 0;
+            //  - -  declare variables and assign values   - -  
+            int noahFavoriteNumber;
+            int meaFavoriteNumber;
+            noahFavoriteNumber = 21;
             meaFavoriteNumber = 17;
 
-            //subtract function
-            static int subtract(int a, int b)
-            {
-                return a - b;
-            }
+         
+            //  - -  Addition  and Subtraction Logic   - -  
+            int diff = Subtract(noahFavoriteNumber, meaFavoriteNumber);
+            int sum = Add(noahFavoriteNumber, meaFavoriteNumber);
 
-            //finally, the program start!
-            //DELETE FOLLOWING FORWARD SLASHES
-            //Console.WriteLine("Noah's Favorite Number: " + noahFavoriteNumber);
+
+            //  - -  Printing to Console   - -  
+            Console.WriteLine("Noah's Favorite Number: " + noahFavoriteNumber);
             Console.WriteLine("Meakalia's Favorite Number: " + meaFavoriteNumber);
-
-            //DELETE FOLLOWING FORWARD SLASHES
-            //int sum = add(noahFavoiteNumber, meaFavoriteNumber);
-            int diff = 0;
-            if (noahFavoiteNumber > meaFavoriteNumber)
-            {
-                diff = subtract(noahFavoiteNumber, meaFavoriteNumber);
-            }
-            else
-            {
-                diff = subtract(meaFavoriteNumber, noahFavoiteNumber);
-            }
-
-            //print results
-            //DELETE FOLLOWING FORWARD SLASHES
-            //Console.WriteLine("Favorite numbers sum: " + sum);
-            Console.WriteLine("Favorite numbers difference: " + diff);
+            Console.WriteLine("When we add our favorite numbers together we get: " + sum);
+            Console.WriteLine("When we subtract our favorite numbers we get: " + diff);
 
 
         }
